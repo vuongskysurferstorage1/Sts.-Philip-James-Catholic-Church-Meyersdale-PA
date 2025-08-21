@@ -1,95 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Project Title</title>
-<meta charset="utf-8">
-<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
-<style> @-ms-viewport { width: device-width; } </style>
-<link rel="stylesheet" href="vendor/reset.min.css">
-<link rel="stylesheet" href="style.css">
+  <title>Sts. Philip & James Catholic Church Virtual Tour</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+  <style> @-ms-viewport { width: device-width; } </style>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://vuongskysurferstorage1.github.io/Sts.-Philip-James-Catholic-Church-Meyersdale-PA/vendor/reset.min.css">
+  <link rel="stylesheet" href="https://vuongskysurferstorage1.github.io/Sts.-Philip-James-Catholic-Church-Meyersdale-PA/style.css">
 </head>
 <body class="multiple-scenes view-control-buttons">
 
-<div id="pano"></div>
+  <div id="pano"></div>
 
-<div id="sceneList">
-  <ul class="scenes">
-    
+  <div id="sceneList">
+    <ul class="scenes">
       <a href="javascript:void(0)" class="scene" data-id="0-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-exterior-2">
         <li class="text">360 View of Sts. Philip &amp; James Catholic Church Meyersdale, PA Exterior 2</li>
       </a>
-    
       <a href="javascript:void(0)" class="scene" data-id="1-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-exterior-1">
         <li class="text">360 View of Sts. Philip &amp; James Catholic Church Meyersdale, PA Exterior 1</li>
       </a>
-    
       <a href="javascript:void(0)" class="scene" data-id="2-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-interior-1">
         <li class="text">360 View of Sts. Philip &amp; James Catholic Church Meyersdale, PA Interior 1</li>
       </a>
-    
       <a href="javascript:void(0)" class="scene" data-id="3-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-interior-2">
         <li class="text">360 View of Sts. Philip &amp; James Catholic Church Meyersdale, PA Interior 2</li>
       </a>
-    
       <a href="javascript:void(0)" class="scene" data-id="4-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-interior-3">
         <li class="text">360 View of Sts. Philip &amp; James Catholic Church Meyersdale, PA Interior 3</li>
       </a>
-    
       <a href="javascript:void(0)" class="scene" data-id="5-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-interior-4">
         <li class="text">360 View of Sts. Philip &amp; James Catholic Church Meyersdale, PA Interior 4</li>
       </a>
-    
       <a href="javascript:void(0)" class="scene" data-id="6-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-interior-5">
         <li class="text">360 View of Sts. Philip &amp; James Catholic Church Meyersdale, PA Interior 5</li>
       </a>
-    
-  </ul>
-</div>
+    </ul>
+  </div>
 
-<div id="titleBar">
-  <h1 class="sceneName"></h1>
-</div>
+  <div id="titleBar">
+    <h1 class="sceneName"></h1>
+  </div>
 
-<a href="javascript:void(0)" id="autorotateToggle">
-  <img class="icon off" src="img/play.png">
-  <img class="icon on" src="img/pause.png">
-</a>
+  <!-- Controls -->
+  <a href="javascript:void(0)" id="autorotateToggle">
+    <img class="icon off" src="https://vuongskysurferstorage1.github.io/Sts.-Philip-James-Catholic-Church-Meyersdale-PA/img/play.png">
+    <img class="icon on" src="https://vuongskysurferstorage1.github.io/Sts.-Philip-James-Catholic-Church-Meyersdale-PA/img/pause.png">
+  </a>
 
-<a href="javascript:void(0)" id="fullscreenToggle">
-  <img class="icon off" src="img/fullscreen.png">
-  <img class="icon on" src="img/windowed.png">
-</a>
+  <a href="javascript:void(0)" id="fullscreenToggle">
+    <img class="icon off" src="https://vuongskysurferstorage1.github.io/Sts.-Philip-James-Catholic-Church-Meyersdale-PA/img/fullscreen.png">
+    <img class="icon on" src="https://vuongskysurferstorage1.github.io/Sts.-Philip-James-Catholic-Church-Meyersdale-PA/img/windowed.png">
+  </a>
 
-<a href="javascript:void(0)" id="sceneListToggle">
-  <img class="icon off" src="img/expand.png">
-  <img class="icon on" src="img/collapse.png">
-</a>
+  <a href="javascript:void(0)" id="sceneListToggle">
+    <img class="icon off" src="https://vuongskysurferstorage1.github.io/Sts.-Philip-James-Catholic-Church-Meyersdale-PA/img/expand.png">
+    <img class="icon on" src="https://vuongskysurferstorage1.github.io/Sts.-Philip-James-Catholic-Church-Meyersdale-PA/img/collapse.png">
+  </a>
 
-<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
-  <img class="icon" src="img/up.png">
-</a>
-<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
-  <img class="icon" src="img/down.png">
-</a>
-<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
-  <img class="icon" src="img/left.png">
-</a>
-<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
-  <img class="icon" src="img/right.png">
-</a>
-<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
-  <img class="icon" src="img/plus.png">
-</a>
-<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
-  <img class="icon" src="img/minus.png">
-</a>
+  <a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+    <img class="icon" src="https://vuongskysurferstorage1.github.io/Sts.-Philip-James-Catholic-Church-Meyersdale-PA/img/up.png">
+  </a>
+  <a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+    <img class="icon" src="https://vuongskysurferstorage1.github.io/Sts.-Philip-James-Catholic-Church-Meyersdale-PA/img/down.png">
+  </a>
+  <a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+    <img class="icon" src="https://vuongskysurferstorage1.github.io/Sts.-Philip-James-Catholic-Church-Meyersdale-PA/img/left.png">
+  </a>
+  <a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+    <img class="icon" src="https://vuongskysurferstorage1.github.io/Sts.-Philip-James-Catholic-Church-Meyersdale-PA/img/right.png">
+  </a>
+  <a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+    <img class="icon" src="https://vuongskysurferstorage1.github.io/Sts.-Philip-James-Catholic-Church-Meyersdale-PA/img/plus.png">
+  </a>
+  <a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+    <img class="icon" src="https://vuongskysurferstorage1.github.io/Sts.-Philip-James-Catholic-Church-Meyersdale-PA/img/minus.png">
+  </a>
 
-<script src="vendor/screenfull.min.js" ></script>
-<script src="vendor/bowser.min.js" ></script>
-<script src="vendor/marzipano.js" ></script>
-
-<script src="data.js"></script>
-<script src="index.js"></script>
+  <!-- Scripts -->
+  <script src="https://vuongskysurferstorage1.github.io/Sts.-Philip-James-Catholic-Church-Meyersdale-PA/vendor/screenfull.min.js"></script>
+  <script src="https://vuongskysurferstorage1.github.io/Sts.-Philip-James-Catholic-Church-Meyersdale-PA/vendor/bowser.min.js"></script>
+  <script src="https://vuongskysurferstorage1.github.io/Sts.-Philip-James-Catholic-Church-Meyersdale-PA/vendor/marzipano.js"></script>
+  <script src="https://vuongskysurferstorage1.github.io/Sts.-Philip-James-Catholic-Church-Meyersdale-PA/data.js"></script>
 
 </body>
 </html>
