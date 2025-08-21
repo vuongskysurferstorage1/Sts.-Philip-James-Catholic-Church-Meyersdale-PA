@@ -1,26 +1,24 @@
 var APP_DATA = {
   "scenes": [
     {
-      "id": "0-sts-philip--james-catholic-church-360-view-1",
-      "name": "360 View 1",
+      "id": "0-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-exterior-1",
+      "name": "360 View of Exterior 1",
       "levels": [
         { "tileSize": 256, "size": 256, "fallbackOnly": true },
         { "tileSize": 512, "size": 512 },
         { "tileSize": 512, "size": 1024 }
       ],
       "faceSize": 1500,
-      "initialViewParameters": {
-        "yaw": -0.002, "pitch": -0.059, "fov": 1.4
-      },
+      "initialViewParameters": { "yaw": 0.0042, "pitch": -0.062, "fov": 1.4 },
       "linkHotspots": [
-        { "yaw": -0.010, "pitch": 0.407, "rotation": 0, "target": "2-sts-philip--james-catholic-church-360-view-3" },
-        { "yaw": -0.009, "pitch": 1.343, "rotation": 0, "target": "1-sts-philip--james-catholic-church-360-view-2" }
+        { "yaw": -0.0042, "pitch": 0.390, "rotation": 0, "target": "2-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-interior-1" },
+        { "yaw": -0.0188, "pitch": 1.443, "rotation": 0, "target": "1-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-exterior-2" }
       ],
       "infoHotspots": []
     },
     {
-      "id": "1-sts-philip--james-catholic-church-360-view-2",
-      "name": "360 View 2",
+      "id": "1-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-exterior-2",
+      "name": "360 View of Exterior 2",
       "levels": [
         { "tileSize": 256, "size": 256, "fallbackOnly": true },
         { "tileSize": 512, "size": 512 },
@@ -29,14 +27,14 @@ var APP_DATA = {
       "faceSize": 1500,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.4 },
       "linkHotspots": [
-        { "yaw": 0.00006, "pitch": 0.019, "rotation": 0, "target": "2-sts-philip--james-catholic-church-360-view-3" },
-        { "yaw": -0.031, "pitch": -1.241, "rotation": 0, "target": "0-sts-philip--james-catholic-church-360-view-1" }
+        { "yaw": -0.0039, "pitch": 0.044, "rotation": 0, "target": "2-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-interior-1" },
+        { "yaw": -0.0107, "pitch": -1.281, "rotation": 0, "target": "0-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-exterior-1" }
       ],
       "infoHotspots": []
     },
     {
-      "id": "2-sts-philip--james-catholic-church-360-view-3",
-      "name": "360 View 3",
+      "id": "2-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-interior-1",
+      "name": "360 View Interior 1",
       "levels": [
         { "tileSize": 256, "size": 256, "fallbackOnly": true },
         { "tileSize": 512, "size": 512 },
@@ -45,15 +43,15 @@ var APP_DATA = {
       "faceSize": 1500,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.4 },
       "linkHotspots": [
-        { "yaw": -3.129, "pitch": 0.225, "rotation": 0, "target": "1-sts-philip--james-catholic-church-360-view-2" },
-        { "yaw": -3.136, "pitch": -0.768, "rotation": 0, "target": "0-sts-philip--james-catholic-church-360-view-1" },
-        { "yaw": -0.014, "pitch": 0.230, "rotation": 0, "target": "3-sts-philip--james-catholic-church-360-view-4" }
+        { "yaw": 3.141, "pitch": 0.218, "rotation": 0, "target": "1-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-exterior-2" },
+        { "yaw": -3.137, "pitch": -0.764, "rotation": 0, "target": "0-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-exterior-1" },
+        { "yaw": 0.0027, "pitch": 0.229, "rotation": 0, "target": "3-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-interior-2" }
       ],
       "infoHotspots": []
     },
     {
-      "id": "3-sts-philip--james-catholic-church-360-view-4",
-      "name": "360 View 4",
+      "id": "3-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-interior-2",
+      "name": "360 View Interior 2",
       "levels": [
         { "tileSize": 256, "size": 256, "fallbackOnly": true },
         { "tileSize": 512, "size": 512 },
@@ -62,14 +60,14 @@ var APP_DATA = {
       "faceSize": 1500,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.4 },
       "linkHotspots": [
-        { "yaw": -0.013, "pitch": 0.193, "rotation": 0, "target": "4-sts-philip--james-catholic-church-360-view-5" },
-        { "yaw": 3.133, "pitch": 0.211, "rotation": 0, "target": "2-sts-philip--james-catholic-church-360-view-3" }
+        { "yaw": -3.139, "pitch": 0.217, "rotation": 0, "target": "2-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-interior-1" },
+        { "yaw": -0.009, "pitch": 0.163, "rotation": 0, "target": "4-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-interior-3" }
       ],
       "infoHotspots": []
     },
     {
-      "id": "4-sts-philip--james-catholic-church-360-view-5",
-      "name": "360 View 5",
+      "id": "4-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-interior-3",
+      "name": "360 View Interior 3",
       "levels": [
         { "tileSize": 256, "size": 256, "fallbackOnly": true },
         { "tileSize": 512, "size": 512 },
@@ -78,14 +76,14 @@ var APP_DATA = {
       "faceSize": 1500,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.4 },
       "linkHotspots": [
-        { "yaw": -3.127, "pitch": 0.253, "rotation": 0, "target": "3-sts-philip--james-catholic-church-360-view-4" },
-        { "yaw": 0.007, "pitch": 0.179, "rotation": 0, "target": "5-sts-philip--james-catholic-church-360-view-6" }
+        { "yaw": 0.0044, "pitch": 0.169, "rotation": 0, "target": "5-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-interior-4" },
+        { "yaw": -3.126, "pitch": 0.238, "rotation": 0, "target": "3-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-interior-2" }
       ],
       "infoHotspots": []
     },
     {
-      "id": "5-sts-philip--james-catholic-church-360-view-6",
-      "name": "360 View 6",
+      "id": "5-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-interior-4",
+      "name": "360 View Interior 4",
       "levels": [
         { "tileSize": 256, "size": 256, "fallbackOnly": true },
         { "tileSize": 512, "size": 512 },
@@ -94,14 +92,14 @@ var APP_DATA = {
       "faceSize": 1500,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.4 },
       "linkHotspots": [
-        { "yaw": 0.002, "pitch": 0.177, "rotation": 0, "target": "6-sts-philip--james-catholic-church-360-view-7" },
-        { "yaw": 3.119, "pitch": 0.358, "rotation": 0, "target": "4-sts-philip--james-catholic-church-360-view-5" }
+        { "yaw": -0.0049, "pitch": 0.167, "rotation": 0, "target": "6-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-interior-5" },
+        { "yaw": 3.121, "pitch": 0.270, "rotation": 0, "target": "3-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-interior-2" }
       ],
       "infoHotspots": []
     },
     {
-      "id": "6-sts-philip--james-catholic-church-360-view-7",
-      "name": "360 View 7",
+      "id": "6-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-interior-5",
+      "name": "360 View Interior 5",
       "levels": [
         { "tileSize": 256, "size": 256, "fallbackOnly": true },
         { "tileSize": 512, "size": 512 },
@@ -110,8 +108,8 @@ var APP_DATA = {
       "faceSize": 1500,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.4 },
       "linkHotspots": [
-        { "yaw": -0.001, "pitch": 0.595, "rotation": 0, "target": "5-sts-philip--james-catholic-church-360-view-6" },
-        { "yaw": -0.0001, "pitch": 0.228, "rotation": 0, "target": "4-sts-philip--james-catholic-church-360-view-5" }
+        { "yaw": 0.009, "pitch": 0.589, "rotation": 0, "target": "5-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-interior-4" },
+        { "yaw": 0.0022, "pitch": 0.250, "rotation": 0, "target": "4-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-interior-3" }
       ],
       "infoHotspots": []
     }
@@ -119,7 +117,7 @@ var APP_DATA = {
   "name": "Sts. Philip & James Catholic Church Meyersdale PA",
   "settings": {
     "mouseViewMode": "drag",
-    "autorotateEnabled": false,
+    "autorotateEnabled": true,
     "fullscreenButton": true,
     "viewControlButtons": false
   }
