@@ -85,5 +85,41 @@
   <script src="https://vuongskysurferstorage1.github.io/Sts.-Philip-James-Catholic-Church-Meyersdale-PA/vendor/marzipano.js"></script>
   <script src="https://vuongskysurferstorage1.github.io/Sts.-Philip-James-Catholic-Church-Meyersdale-PA/data.js"></script>
 
+<script>
+(function() {
+  // Detect whether the site is live (GitHub Pages/Squarespace) or running locally
+  var isLive = window.location.hostname.includes("github.io") || 
+               window.location.hostname.includes("sky-surfer.com");
+
+  // Base path for tiles
+  var baseTilePath = isLive
+    ? "https://vuongskysurferstorage1.github.io/Sts.-Philip-James-Catholic-Church-Meyersdale-PA/tiles/"
+    : "tiles/";
+
+  // Wait until Marzipano is loaded
+  window.addEventListener("load", function() {
+    if (typeof Marzipano === "undefined" || typeof scenes === "undefined") {
+      console.error("Marzipano or scenes data not found!");
+      return;
+    }
+
+    // Override each scene's tile source dynamically
+    scenes.forEach(function(scene) {
+      if (scene.id) {
+        // Update the URL template for each scene
+        if (scene.levels && scene.levels.length) {
+          scene.levels.forEach(function(level) {
+            if (level.tileSize && level.size) {
+              scene.tileUrl = baseTilePath + scene.id + "/{z}/{f}.jpg";
+            }
+          });
+        }
+      }
+    });
+  });
+})();
+</script>
+
+
 </body>
 </html>
