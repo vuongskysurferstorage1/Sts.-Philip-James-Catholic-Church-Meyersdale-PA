@@ -91,5 +91,25 @@
 <script src="data.js"></script>
 <script src="index.js"></script>
 
+<div id="thumbnail-bar" style="position: fixed; bottom: 10px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px;">
+</div>
+
+<script>
+  var bar = document.getElementById('thumbnail-bar');
+  APP_DATA.scenes.forEach(function(scene) {
+    if (scene.thumbnail) {
+      var img = document.createElement('img');
+      img.src = scene.thumbnail;
+      img.style.width = '80px';
+      img.style.cursor = 'pointer';
+      img.onclick = function() {
+        switchScene(scene.id);
+      };
+      bar.appendChild(img);
+    }
+  });
+</script>
+
+
 </body>
 </html>

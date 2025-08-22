@@ -122,3 +122,22 @@ var APP_DATA = {
     "viewControlButtons": true
   }
 };
+
+{
+  "id": "4-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-interior-3",
+  "name": "360 View of Sts. Philip & James Catholic Church Meyersdale, PA Interior 3",
+  "levels": [
+    { "tileSize": 256, "size": 256, "fallbackOnly": true },
+    { "tileSize": 512, "size": 512 },
+    { "tileSize": 512, "size": 1024 }
+  ],
+  "faceSize": 1500,
+  "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5708 },
+  "thumbnail": "tiles/interior-3-thumb.jpg",  // ← Add this line
+  "linkHotspots": [
+    { "yaw": 0.00444, "pitch": 0.1693, "rotation": 0, "target": "5-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-interior-4" },
+    { "yaw": -3.1257, "pitch": 0.2378, "rotation": 0, "target": "3-360-view-of-sts-philip--james-catholic-church-meyersdale-pa-interior-2" }
+  ],
+  "infoHotspots": []
+}
+
